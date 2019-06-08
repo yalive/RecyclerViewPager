@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Custom attrs for RecyclerViewPager -->
+    <declare-styleable name="RecyclerViewPager">
+        <attr name="rvp_pageMargin" format="dimension|reference" />
+        <attr name="rvp_adjacentVisibleSize" format="dimension|reference" />
+    </declare-styleable>
+
+</resources>
