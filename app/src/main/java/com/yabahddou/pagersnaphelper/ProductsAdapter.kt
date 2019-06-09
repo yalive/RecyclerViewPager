@@ -13,7 +13,7 @@ import kotlin.math.min
  * Created by Abdelhadi on 2019-06-01.
  ***************************************
  */
-class AccountsAdapter(itemsCount: Int = 3) : RecyclerView.Adapter<AccountsAdapter.ViewHolder>() {
+class ProductsAdapter(itemsCount: Int = 3) : RecyclerView.Adapter<ProductsAdapter.ViewHolder>() {
 
     private val productStore = listOf(
         Product("123456781234567812345678", "Product 1"),
@@ -57,9 +57,9 @@ class AccountsAdapter(itemsCount: Int = 3) : RecyclerView.Adapter<AccountsAdapte
             }
         }
 
-        fun bind(account: Product) {
-            txtHolderName.text = account.productName
-            txtIban.text = account.productId
+        fun bind(product: Product) {
+            txtHolderName.text = product.productName
+            txtIban.text = product.productId
             checkBox.isChecked = adapterPosition == currentSelectedItem
         }
 
